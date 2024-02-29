@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Quicksand:wght@300;400;500&family=Ubuntu:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+*{
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.Btn_add {
+  width: fit-content;
+  margin-bottom: 20px;
+  background-color: rgb(8, 8, 55);
+  padding: 5px 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+   text-align: 0;
+   border-radius: 6px;
+   text-decoration: none;
+}
+
+.Btn_add img{
+  margin-right: 5px;
+  height: 20px;
+}
+
+/* Tableau */
+
+table{
+  border-collapse: collapse;
+  color: #404040; 
+ 
+}
+
+th{
+  font:16PX;
+  border-bottom: 3PX solid black;
+  padding: 5PX 20px;
+  font-weight: 500;
+
+}
+
+td{
+  font-weight: 400;
+  padding: 5px 30px;
+  font-size: 14px;
+  text-align: center;
+}
+
+img{
+  height: 60px;
+}
+
+tr:nth-child(2n){
+background-color: #f6f8f8;
+}
+
+tr:nth-child(2n) td{
+  border-bottom: 1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0;
+  }
+
+  /* Form css */
+
+  .form{
+  background-color: #f6f8f8;
+  padding:25px ;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  border-radius: 6px;
+  }
+
+  .form form{
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+  }
+
+  .back_btn{
+    color: rgb(6, 6, 46);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .back_btn img{
+    height: 16px;
+    margin-right: 5px;
+  }
+
+  h2{
+    margin: 10px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .Erreur_message{
+    color: red;
+    font-size: 15px;
+  }
+
+  label{
+    margin-top: 5px;
+    text-transform: uppercase;
+  }
+
+  input{
+    padding: 5px;
+    border: 1px solid #999;
+    margin-top: 2px;
+  }
+
+  input :focus{
+    border: 1px solid #ffcb61;
+  }
+
+  input[type="submit"]{
+    margin-top: 25px;
+     background-color: rgb(11, 11, 57);
+     border: 1px solid rgb(12, 12, 45);
+     cursor: pointer;
+     color: #FFF;
+     text-transform: uppercase;
+
+
+  }
