@@ -74,11 +74,12 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.php" class="nav-item nav-link active">Accueil</a>
                 <a href="about.php" class="nav-item nav-link">A propos</a>
+
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                     <div class="dropdown-menu bg-light m-0">
                         <a href="callcenter.php" class="dropdown-item">Call center</a>
-                        <a href="video.php" class="dropdown-item">Sécurite par vidéo de surveillance</a>
+                        <a href="video.php" class="dropdown-item">Sécurite par Vidéo de surveillance</a>
                         <a href="Geolocalisation.php" class="dropdown-item">Géolocalisation & tracker GPS</a>
                         <a href="callcenter.php" class="dropdown-item">Informatique cloud</a>
                     </div>
@@ -90,69 +91,122 @@
         </div>
     </nav>
     <!-- Navbar End -->
+    
+    <!-- Carousel Start -->
+    <div class="container-fluid px-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 text-start">
 
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
+                                    <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight"> Ans d'experience</p>
+                                    <h2 class="display-1 text-white mb-5 animated slideInRight"></h2>
+                                    <a href="about.php" class="btn btn-primary py-3 px-5 animated slideInRight">Savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 text-start">
+                                    <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">Ans d'experience</p>
+                                    <h2 class="display-1 text-white mb-5 animated slideInRight">
+                                    </h2>
+                                    <a href="about.php" class="btn btn-primary py-3 px-5 animated slideInRight">Savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 text-start">
+                                    <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">Ans d'experience</p>
+                                    <h2 class="display-1 text-white mb-5 animated slideInRight">
+                                    </h2>
+                                    <a href="about.php" class="btn btn-primary py-3 px-5 animated slideInRight">Savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 text-start">
+                                    <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">Ans d'experience</p>
+                                    <h2 class="display-1 text-white mb-5 animated slideInRight">
+                                    </h2>
+                                    <a href="about.php" class="btn btn-primary py-3 px-5 animated slideInRight">Savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 text-start">
+                                    <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">Ans d'experience</p>
+                                    <h2 class="display-1 text-white mb-5 animated slideInRight">
+                                    </h2>
+                                    <a href="about.php" class="btn btn-primary py-3 px-5 animated slideInRight">Savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 text-start">
+                                    <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">Ans d'experience</p>
+                                    <h2 class="display-1 text-white mb-5 animated slideInRight">
+                                    </h2>
+                                    <a href="about.php" class="btn btn-primary py-3 px-5 animated slideInRight">Savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
-    <!-- Page Header End -->
 
 
-    <!-- call center -->
-    <section class="presentation first">
-        <div class="product-presentation">
-            <h2>Faut-il craindre la vidéosurveillance ? </h2>
-            <p>
-                La vidéo surveillance le moyen le plus efficace pour se protéger
-                Le taux de cambriolage étant en hausse avec près de 1000 logements cambriolés l’année dernière, il est devenu important de se prémunir face à une éventuelle intrusion. Selon l’ONDRP, les caméras de vidéosurveillance est le moyen de protection le plus efficace pour réduire les risques de cambriolages.
-                <br> Zoom sur cette nouvelle technologie qui permet d’assurer nos arrières.
-            </p>
-            <div class="small-images">
-                <div class="small">
-                    <img src="img/camesurv2.jpeg" />
-                </div>
-                <div class="small">
-                    <img src="img/camsur1.jpeg" />
-                </div>
-                <div class="small">
-                    <img src="img/VIDS.PNG" />
-                </div>
-            </div>
-        </div>
-        <div class="image-presentation">
-            <img src="img/camsurv.jpeg" width="800" height="400" />
-        </div>
+    <!-- Carousel End -->
 
-        </div>
-    </section>
-    <section class="presentation first">
-        <div class="product-presentation">
-            <h2>N'en douter plus nous vous permettons </h2>
-            <p>
-                de sécuriser vos domiciles (vandalisme, cambriolage,…), protéger des personnes et/ou des biens (incendies, surveillance personnes âgées, bébés,…) – un système avec enregistrement, qui est similaire au système précédent mais avec une sauvegarde des images vidéos et la possibilité de les relire.
-            </p>
-            <div class="small-images">
-                <div class="small">
-                    <img src="img/cameraidm.jpg" />
-                </div>
-                <div class="small">
-                    <img src="img/surveillance.jpeg" />
-                </div>
-                <div class="small">
-                    <img src="img/camdim.jpg" />
-                </div>
-            </div>
-        </div>
-        <div class="image-presentation">
-            <img src="img/VIDS.PNG" width="800" height="400" />
-        </div>
-
-        </div>
-    </section>
-
-
-    <!-- end call center -->
 
 
     <!-- Footer Start -->

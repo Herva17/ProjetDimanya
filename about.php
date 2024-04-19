@@ -84,6 +84,7 @@
                 </div>
                 <a href="contact.php" class="nav-item nav-link">Contacts</a>
                 <a href="Reseau.php" class="nav-item nav-link">Réseau</a>
+                <a href="Actualite.php" class="nav-item nav-link">Actualite</a>
             </div>
             <!-- <a href="" class="btn btn-primary px-3 d-none d-lg-block"></a> -->
         </div>

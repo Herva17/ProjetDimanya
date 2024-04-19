@@ -87,6 +87,7 @@
                 </div>
                 <a href="contact.php" class="nav-item nav-link">Contacts</a>
                 <a href="Reseau.php" class="nav-item nav-link">Réseau</a>
+                <a href="Actualite.php" class="nav-item nav-link">Actualite</a>
             </div>
             <!-- <a href="" class="btn btn-primary px-3 d-none d-lg-block"></a> -->
         </div>
@@ -520,7 +521,7 @@
                     <form action="index.php" method="POST">
                     <div class="position-relative w-100">
                         <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="mail" name="email" placeholder="votre  e-mail">
-                        <button type="submit" name="Send" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Send</button>
+                        <button type="submit" name="Send" id="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Send</button>
                     </div>
                     </form>
                     <?php

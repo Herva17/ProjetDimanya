@@ -137,7 +137,7 @@
 
   /* main */
 
-  /* .main{
+  .main{
     position: absolute;
     width: calc(100% -300px);
     left: 330px; 
@@ -644,4 +644,4 @@ tr:nth-child(2n) td{
      text-transform: uppercase;
 
 
-  } */
+  } 

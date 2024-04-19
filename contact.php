@@ -85,6 +85,7 @@
                 </div>
                 <a href="contact.php" class="nav-item nav-link">Contacts</a>
                 <a href="Reseau.php" class="nav-item nav-link">Réseau</a>
+                <a href="Actualite.php" class="nav-item nav-link">Actualite</a>
             </div>
         </div>
     </nav>
@@ -208,13 +209,14 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit" name="envoye">Envoyer le message</button>
+                                <button class="btn btn-primary py-3 px-5" type="submit" name="envoye"  id="button">Envoyer le message</button>
                             </div>
                         </div>
                     </form>
                     <?php
-                    include_once "Admin/EnregContact.php";
-                    ?>
+                    require"New_folder/users/AjoutContact.php";
+?>
+
                 </div>
             </div>
         </div>

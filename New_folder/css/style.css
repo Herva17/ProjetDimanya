@@ -1,28 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Quicksand:wght@300;400;500&family=Roboto:ital,wght@0,500;1,300;1,400&family=Ubuntu:ital,wght@0,400;0,500;1,300;1,400&display=swap');
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Quicksand:wght@300;400;500&family=Roboto:ital,wght@0,500;1,300;1,400&family=Ubuntu:ital,wght@0,400;0,500;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-	margin:0px;
-	padding: 0px;
-	background-color:#1b203d;
-	overflow: hidden;
-	font-family: system-ui;
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #1b203d;
+  overflow: hidden;
+  font-family: system-ui;
 }
-.clearfix{
-	clear: both;
+.clearfix {
+  clear: both;
   overflow: auto;
 }
-.logo{
-	margin: 0px;
-	margin-left: 28px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 30px;
+.logo {
+  margin: 0px;
+  margin-left: 28px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 30px;
 }
-.logo span{
-	color: #f7403b;
+.logo span {
+  color: #f7403b;
 }
 .sidenav {
   height: 100%;
@@ -46,130 +46,129 @@ body{
 }
 .sidenav a:hover {
   color: #f1f1f1;
-  background-color:#1b203d;
+  background-color: #1b203d;
 }
-.sidenav{
+.sidenav {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
 }
 #main {
-  transition: margin-left .5s;
+  transition: margin-left 0.5s;
   padding: 16px;
   margin-left: 300px;
 }
-.head{
-	padding:20px;
+.head {
+  padding: 20px;
 }
-.col-div-6{
-	width: 50%;
-	float: left;
+.col-div-6 {
+  width: 50%;
+  float: left;
 }
-.profile{
-	display: inline-block;
- float: right;
-	width: 160px;
+.profile {
+  display: inline-block;
+  float: right;
+  width: 160px;
 }
-.pro-img{
-	float: left;
-	width: 40px;
-	margin-top: 5px;
+.pro-img {
+  float: left;
+  width: 40px;
+  margin-top: 5px;
 }
-.profile p{
-	color: white;
-	font-weight: 500;
-	margin-left: 55px;
-	margin-top: 10px;
-	font-size: 13.5px;
+.profile p {
+  color: white;
+  font-weight: 500;
+  margin-left: 55px;
+  margin-top: 10px;
+  font-size: 13.5px;
 }
-.profile p span{
-	font-weight: 400;
-    font-size: 12px;
-    display: block;
-    color: #8e8b8b;
+.profile p span {
+  font-weight: 400;
+  font-size: 12px;
+  display: block;
+  color: #8e8b8b;
 }
-.col-div-3{
-	width: 25%;
-	float: left;
+.col-div-3 {
+  width: 25%;
+  float: left;
 }
-.box{
-	width: 85%;
-	height: 100px;
-	background-color: #272c4a;
-	margin-left: 10px;
-	padding:10px;
-
+.box {
+  width: 85%;
+  height: 100px;
+  background-color: #272c4a;
+  margin-left: 10px;
+  padding: 10px;
 }
-.box p{
-	 font-size: 35px;
-    color: white;
-    font-weight: bold;
-    line-height: 30px;
-    padding-left: 10px;
-    margin-top: 20px;
-    display: inline-block;
+.box p {
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+  line-height: 30px;
+  padding-left: 10px;
+  margin-top: 20px;
+  display: inline-block;
 }
-.box p span{
-	font-size: 20px;
-	font-weight: 400;
-	color: #818181;
-  
+.box p span {
+  font-size: 20px;
+  font-weight: 400;
+  color: #818181;
 }
-.box-icon{
-	font-size: 40px!important;
-    float: right;
-    margin-top: 35px!important;
-    color: #818181;
-    padding-right: 10px;
+.box-icon {
+  font-size: 40px !important;
+  float: right;
+  margin-top: 35px !important;
+  color: #818181;
+  padding-right: 10px;
 }
-.col-div-8{
-	width: 100%;
-	float: left;
+.col-div-8 {
+  width: 100%;
+  float: left;
 }
-.col-div-4{
-	width: 30%;
-	float: left;
+.col-div-4 {
+  width: 30%;
+  float: left;
 }
-.content-box{
-	padding: 20px;
-  
+.content-box {
+  padding: 20px;
+  overflow: auto;
 }
-.content-box p{
-	margin: 0px;
-    font-size: 20px;
-    color: #f7403b;
+.content-box p {
+  margin: 0px;
+  font-size: 20px;
+  color: #f7403b;
 }
-.content-box p span{
-	float: right;
-    background-color: #ddd;
-    padding: 3px 10px;
-    font-size: 25px;
-    color: #1b203d;
+.content-box p span {
+  float: right;
+  background-color: #ddd;
+  padding: 3px 10px;
+  font-size: 25px;
+  color: #1b203d;
+ 
 }
-.box-8, .box-4{
-	width: 95%;
-	background-color: #272c4a;
-	height: 330px;
+.box-8,
+.box-4 {
+  width: 95%;
+  background-color: #272c4a;
+  height: 330px;
   overflow-y: auto;
-	
 }
-.nav2{
-	display: none;
+.nav2 {
+  display: none;
 }
 
-.box-8{
-	margin-left: 10px;
+.box-8 {
+  margin-left: 10px;
 }
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
-  
 }
-td, th {
+td,
+th {
   text-align: left;
-  padding:15px;
+  padding: 15px;
   color: #ddd;
   border: 2px solid #81818140;
   border-bottom: 2px solid #81818140;
@@ -225,30 +224,30 @@ td, th {
   font-size: 2em;
 }
 
-.bouton{
+.bouton {
   font-size: 20px;
   color: white;
   background: darkgreen;
   box-shadow: 10px black;
   border-radius: 5px 5px 5px 5px;
-} 
-.bouton:hover{
+}
+.bouton:hover {
   background: black;
 }
 
-.bouton{
+.bouton {
   font-size: 20px;
   color: white;
   background: darkgreen;
   box-shadow: 10px black;
   border-radius: 5px 5px 5px 5px;
-} 
-.bouton:hover{
+}
+.bouton:hover {
   background: black;
 }
 
 /* LOGIN */
-.form{
+.form {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -263,24 +262,25 @@ td, th {
   /* -webkit-backdrop-filter: blur(5px); */
   background-color: rgba(0, 0, 0, 0.4);
   padding-bottom: 2px;
-  padding: 40px; 
-  margin-top: -100px;  
+  padding: 40px;
+  margin-top: -100px;
 }
 
-.form input{
-width: 100%;
-margin-top: 5px;
+.form input {
+  width: 100%;
+  margin-top: 5px;
 }
 
-input:not(input[type="submit"]){
+input:not(input[type="submit"]) {
   border: none;
   border-bottom: 1px solid white;
   background: transparent;
   outline: none;
   height: 60px;
   color: white;
+  font-size: 30px;
 }
-input[type="submit"]{
+input[type="submit"] {
   border: none;
   outline: none;
   color: white;
@@ -291,20 +291,22 @@ input[type="submit"]{
   margin-bottom: 15px;
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover {
   background: rgb(20, 20, 20);
 }
-label, a, input{
+label,
+a,
+input {
   color: white;
 }
 
-.form h1{
+.form h1 {
   text-decoration: underline;
   font-size: 30px;
   margin-top: 10px;
 }
 
-.log img{
+.log img {
   position: absolute;
   width: 90px;
   top: -7%;
@@ -312,12 +314,12 @@ label, a, input{
   border-radius: 90px;
 }
 
-.message{
+.message {
   color: red;
 }
-tr th img{
+tr th img {
   height: 90px;
 }
- .ajouter{
-      font-size: 20px;
- }
+.ajouter {
+  font-size: 20px;
+}

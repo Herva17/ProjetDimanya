@@ -45,7 +45,7 @@
 		
 		<div class="col-div-3">
 			<div class="box">
-				<p>67<br /><span>Ans experiences</span></p>
+				<p>67<br /><span>Ans de vie</span></p>
 				<i class="fa fa-users box-icon"></i>
 			</div>
 		</div>
@@ -57,7 +57,7 @@
 		</div>
 		<div class="col-div-3">
 			<div class="box">
-				<p>99<br /><span>Clients Satisfaits</span></p>
+				<p>99<br /><span>Clients ravis</span></p>
 				<i class="fa fa-shopping-bag box-icon"></i>
 			</div>
 		</div>

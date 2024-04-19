@@ -22,7 +22,7 @@
                 <input type="text" id="username " name="pseudo"><br>
                 <label for="password">Mot de passe</label><br>
                 <input type="password" id="possword" name="mdp"><br>
-                <input type="submit" value="Se connecter" name="valider"><br>
+                <input type="submit" value="Se connecter" name="valider" id="button"><br>
                 <?php
                 include "login.php";
                 ?>

@@ -5,6 +5,7 @@
     <title></title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
 </head>
 
 
@@ -71,7 +72,7 @@
         <div class="col-div-8">
             <div class="box-8">
                 <div class="content-box">
-                <p>Temoignage client <a href="users/ajouteTemoignage.php"> <span>Ajouter</span></a></p>
+                    <p>Temoignage client <a href="users/ajouteTemoignage.php"> <span>Ajouter</span></a></p>
                     <br />
                     <table>
                         <tr>
@@ -100,7 +101,7 @@
                                     <th><?= $rows["temoignagecl1"] ?></th>
                                     <th><?= $rows["temoignagecl2"] ?></th>
                                     <th><?= $rows["temoignagecl3"] ?></th>
-                                    <th><a href="users/Modtemoignage.php? ID=<?= $rows["id"] ?>"><button type="submit" name="Send" class="bouton">Modifier</button></a></th>
+                                    <th><a href="users/Supprimertemoignage.php? ID=<?= $rows["id"] ?>"><button type="submit" name="Send" class="bouton">Supprimer</button></a></th>
                                 </tr>
                         <?php
                             }

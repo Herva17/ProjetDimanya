@@ -50,11 +50,11 @@
         move_uploaded_file($_FILES["img2"]["tmp_name"], $upload2);
         move_uploaded_file($_FILES["img3"]["tmp_name"], $upload3);
 
-        $Tem1 = $_POST['temoignage1'];
-        $Tem2 = $_POST['temoignage2'];
-        $Tem3 = $_POST['temoignage3'];
+        $Tem1 = htmlspecialchars($_POST['temoignage1']);
+        $Tem2 = htmlspecialchars($_POST['temoignage2']);
+        $Tem3 = htmlspecialchars($_POST['temoignage3']);
 
-        $req = "INSERT INTO temoignage(id, photocl1, photocl2, photocl3, temoignagecl1, temoignagecl2, temoignagecl3) VALUES (0,'$img1','$img2','$img3','$Tem1','$Tem2','$Tem3')";
+        $req = "INSERT INTO temoignage(id,photocl1, photocl2, photocl3, temoignagecl1, temoignagecl2, temoignagecl3) VALUES (0,'$img1','$img2','$img3','$Tem1','$Tem2','$Tem3')";
         $execution=mysqli_query($Con, $req);
         if ($execution) {
             header("location:../temoignage.php");
@@ -89,12 +89,12 @@
             <label>Client 3</label>
             <input type="file" name="img3" required>
             <label>Temoignage 1</label>
-            <input type="text" name="temoignage1" required autocomplete="off">
+            <textarea type="text" name="temoignage1"></textarea>
             <label>Temoignage 2</label>
-            <input type="text" name="temoignage2" required autocomplete="off">
+            <textarea type="text" name="temoignage2"></textarea>
             <label>Temoignage 3</label>
-            <input type="text" name="temoignage3" required autocomplete="off">
-            <input type="submit" value="Ajouter" name="Ajouter">
+            <textarea type="text" name="temoignage3"></textarea>
+            <input type="submit" value="Publier" name="Ajouter">
         </form>
     </div>
 </body>

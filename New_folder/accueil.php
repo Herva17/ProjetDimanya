@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title></title>
+	<title>DimanyaWorld</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -54,7 +54,7 @@
 		?>
 				<div class="col-div-3">
 					<div class="box">
-						<p><?= $rows["Experience"] ?><br /><span>Ans experiences</span></p>
+						<p><?= $rows["Experience"] ?><br /><span>Ans de vie</span></p>
 						<i class="fa fa-users box-icon"></i>
 					</div>
 				</div>
@@ -67,7 +67,7 @@
 				</div>
 				<div class="col-div-3">
 					<div class="box">
-						<p><?= $rows["clientsS"] ?><br /><span>Clients Satisfaits</span></p>
+						<p><?= $rows["clientsS"] ?><br /><span>Clients ravis</span></p>
 						<i class="fa fa-shopping-bag box-icon"></i>
 					</div>
 				</div>

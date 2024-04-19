@@ -71,7 +71,7 @@
         <div class="col-div-8">
             <div class="box-8">
                 <div class="content-box">
-                    <p>Utilisateurs </p>
+                    <p>Contenu Slider </p>
                     <br />
                     <table>
                         <tr>

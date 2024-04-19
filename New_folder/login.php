@@ -1,6 +1,9 @@
 <?php
 include_once "connexion.php";
 if (isset($_POST['valider'])) {
+    if(empty($_POST['pseudo']) || empty($_POST['mdp'])) {
+        echo"Champs invalides";
+    } else {
     $nom = $_POST['pseudo'];
     $pass = $_POST['mdp'];
 
@@ -10,12 +13,17 @@ if (isset($_POST['valider'])) {
     if ($resultat->num_rows > 0) {
         header('location:accueil.php');
     } else {
-        ?>
-       <script>
-        alert("Il y'a une erreur veille saisir encore ");
-       </script>
-        <?php
+?>
+        <script>
+            let afficher = () => {
+                alert("Il y'a une erreur dans vos saisis veillez saisir encore svp! ");
+            }
+
+            button.addEventListener("click", afficher);
+        </script>
+<?php
     }
+}
 }
 
 ?>
