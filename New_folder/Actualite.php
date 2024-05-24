@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!Doctype HTML>
 <html>
 
@@ -87,6 +84,87 @@ session_start();
 		<div class="clearfix"></div>
 		<br /><br />
 
+		<h1 class="titre">Mise à jour de la page Actualite</h1>
+		<hr> <br><br><br>
+		<div class="pageActualite">
+
+			<div class="actualite1">
+				<?php
+				$req = mysqli_query($Con, "SELECT * FROM actualite where id = 10");
+				if (mysqli_num_rows($req) == 0) {
+					echo "Aucune donnée n'a été trouvée";
+				} else {
+					while ($rows = mysqli_fetch_assoc($req)) {
+				?>
+						<img src="../img/<?= $rows["Images"] ?>" alt="Actualité" />
+						<div class="actions">
+							<a href="page_formulaire.php? ID=<?= $rows["id"] ?>" class="modifier">Modifier</a>
+							<a href="voir4.php? ID=<?= $rows["id"] ?>" class="modifier">Voir plus</a>
+						</div>
+			</div>
+	<?php
+					}
+				}
+	?>
+	<div class="actualite2">
+		<?php
+		$req = mysqli_query($Con, "SELECT * FROM actualite where id = 9");
+		if (mysqli_num_rows($req) == 0) {
+			echo "Aucune donnée n'a été trouvée";
+		} else {
+			while ($rows = mysqli_fetch_assoc($req)) {
+		?>
+				<img src="../img/<?= $rows["Images"] ?>" alt="Actualité" />
+				<div class="actions">
+					<a href="page_formulaire.php? ID=<?= $rows["id"] ?>" class="modifier">Modifier</a>
+					<a href="voir3.php? ID=<?= $rows["id"] ?>" class="modifier">Voir plus</a>
+				</div>
+	</div>
+<?php
+			}
+		}
+?>
+<div class="actualite3">
+	<?php
+	$req = mysqli_query($Con, "SELECT * FROM actualite where id = 8");
+	if (mysqli_num_rows($req) == 0) {
+		echo "Aucune donnée n'a été trouvée";
+	} else {
+		while ($rows = mysqli_fetch_assoc($req)) {
+	?>
+			<img src="../img/<?= $rows["Images"] ?>" alt="Actualité" />
+			<div class="actions">
+				<a href="page_formulaire.php? ID=<?= $rows["id"] ?>" class="modifier">Modifier</a>
+				<a href="voir2.php? ID=<?= $rows["id"] ?>" class="modifier">Voir plus</a>
+			</div>
+</div>
+<?php
+		}
+	}
+?>
+
+<div class="actualite4">
+	<?php
+	include_once("connexion.php");
+	$req = mysqli_query($Con, " SELECT * FROM  actualite where id = 7");
+	if (mysqli_num_rows($req) == 0) {
+		echo "Aucune donnée n'a été trouvée";
+	} else {
+		while ($rows = mysqli_fetch_assoc($req)) {
+	?>
+
+			<img src="../img/<?= $rows["Images"] ?>" alt="Actualité" />
+			<div class="actions">
+				<a href="page_formulaire.php? ID=<?= $rows["id"] ?>" class="modifier">Modifier</a>
+				<a href="voir.php? ID=<?= $rows["id"] ?>" class="modifier">Voir plus</a>
+		<?php
+		}
+	}
+
+		?>
+			</div>
+</div>
+		</div>
 
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

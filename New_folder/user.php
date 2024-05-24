@@ -6,13 +6,11 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        span{
-      font-size: 20px;
- }
+        span {
+            font-size: 20px;
+        }
     </style>
 </head>
-
-
 <body>
 
     <div id="mySidenav" class="sidenav">
@@ -101,7 +99,7 @@
                                     <th><?= $rows["AdresseMail"] ?></th>
                                     <th><?= $rows["MotDePasse"] ?></th>
                                     <th><a href="users/ModUser.php? ID=<?= $rows["id"] ?>"><button type="submit" name="Send" class="bouton">Modifier</i></button></a></th>
-                                    <th><a href="SuppUser.php? ID=<?= $rows["id"] ?>"><button type="submit" name="Send" class="bouton">Supprimer</button></a></th>
+                                    <th><a href="SuppUser.php? ID=<?= $rows["id"] ?>"><button type="submit" name="Send" class="boutons">Supprimer</button></a></th>
                                 </tr>
                         <?php
                             }
@@ -113,10 +111,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
             $(".nav").click(function() {

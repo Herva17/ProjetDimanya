@@ -1,3 +1,4 @@
+
 <!Doctype HTML>
 <html>
 
@@ -19,7 +20,7 @@
         <a href="user.php" class="icon-a"><i class="fa fa-user icons"></i>Users</a>
         <a href="setting_site.php" class="icon-a"><i class="fa fa-list-alt icons"></i>SettingContenu</a>
         <a href="#" class="icon-a"><i class="fa fa-shopping-bag icons"></i>Temoignage</a>
-        <a href="#" class="icon-a"><i class="fa fa-tasks icons"></i>Images</a>
+        <a href="Actualite.php" class="icon-a"><i class="fa fa-tasks icons"></i>Actualite</a>
 
     </div>
     <div id="main">
@@ -101,7 +102,7 @@
                                     <th><?= $rows["temoignagecl1"] ?></th>
                                     <th><?= $rows["temoignagecl2"] ?></th>
                                     <th><?= $rows["temoignagecl3"] ?></th>
-                                    <th><a href="users/Supprimertemoignage.php? ID=<?= $rows["id"] ?>"><button type="submit" name="Send" class="bouton">Supprimer</button></a></th>
+                                    <th><a href="users/Supprimertemoignage.php? ID=<?= $rows["id"] ?>"><button type="submit" name="Send" class="boutons">Supprimer</button></a></th>
                                 </tr>
                         <?php
                             }

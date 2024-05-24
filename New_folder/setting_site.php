@@ -18,11 +18,10 @@
         <a href="user.php" class="icon-a"><i class="fa fa-user icons"></i>Users</a>
         <a href="setting_site.php" class="icon-a"><i class="fa fa-list-alt icons"></i>SettingContenu</a>
         <a href="temoignage.php" class="icon-a"><i class="fa fa-shopping-bag icons"></i>Temoignage</a>
-        <a href="#" class="icon-a"><i class="fa fa-tasks icons"></i> Images</a>
+        <a href="Actualite.php" class="icon-a"><i class="fa fa-tasks icons"></i>Actualite</a>
 
     </div>
     <div id="main">
-
         <div class="head">
             <div class="col-div-6">
                 <span style="font-size:30px;cursor:pointer; color: white;" class="nav">☰ Dashboard</span>
@@ -31,7 +30,6 @@
 
             <div class="col-div-6">
                 <div class="profile">
-
                     <img src="" class="pro-img" />
                     <p>Admin<span>DimanyaWorld</span></p>
                 </div>
@@ -111,16 +109,10 @@
                             }
                         }
                         ?>
-
-
                     </table>
                 </div>
             </div>
         </div>
-
-
-
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
             $(".nav").click(function() {

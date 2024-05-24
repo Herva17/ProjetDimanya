@@ -91,107 +91,134 @@
         </div>
     </nav>
     <!-- Navbar End -->
-    
+
     <!-- Carousel Start -->
     <div class="container-fluid px-0 mb-5">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10 text-start">
+                    <?php
+                    include_once("New_folder/connexion.php");
+                    $req = mysqli_query($Con, " SELECT * FROM  actualite where id = 7");
+                    if (mysqli_num_rows($req) == 0) {
+                        echo "Aucune donnée n'a été trouvée";
+                    } else {
+                        while ($rows = mysqli_fetch_assoc($req)) {
+                    ?>
+                            <img class="w-100 " src="img/<?= $rows["Images"] ?>" alt="Image">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-10 text-start">
 
-                                    <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight"> Ans d'experience</p>
-                                    <h2 class="display-1 text-white mb-5 animated slideInRight"></h2>
-                                    <a href="about.php" class="btn btn-primary py-3 px-5 animated slideInRight">Savoir plus</a>
+                                            <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight"> <b><?= $rows["Titre"] ?></b></p>
+                                            <p class="display-1 text-white mb-2 animated slideInRight">
+                                            <h3 class="text-white"><?= $rows["description"] ?></h3>
+                                            </p>
+                                            <a href="about.php" class="btn btn-primary py-3 px-5 animated slideInRight">Savoir plus</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                    <?php
+                        }
+                    }
+
+                    ?>
                 </div>
 
                 <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10 text-start">
-                                    <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">Ans d'experience</p>
-                                    <h2 class="display-1 text-white mb-5 animated slideInRight">
-                                    </h2>
-                                    <a href="about.php" class="btn btn-primary py-3 px-5 animated slideInRight">Savoir plus</a>
+
+                    <?php
+                    $req = mysqli_query($Con, " SELECT * FROM  actualite where id = 8");
+                    if (mysqli_num_rows($req) == 0) {
+                        echo "Aucune donnée n'a été trouvée";
+                    } else {
+                        while ($rows = mysqli_fetch_assoc($req)) {
+                    ?>
+                            <img class="w-100 " src="img/<?= $rows["Images"] ?>" alt="Image">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-10 text-start">
+
+                                            <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight"> <?= $rows["Titre"] ?></p>
+                                            <p class="display-1 text-white mb-2 animated slideInRight">
+                                            <h3 class="text-white"><?= $rows["description"] ?></h3>
+                                            </p>
+                                            <a href="about.php" class="btn btn-primary py-3 px-5 animated slideInRight">Savoir plus</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-  
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10 text-start">
-                                    <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">Ans d'experience</p>
-                                    <h2 class="display-1 text-white mb-5 animated slideInRight">
-                                    </h2>
-                                    <a href="about.php" class="btn btn-primary py-3 px-5 animated slideInRight">Savoir plus</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php
+                        }
+                    }
+
+                    ?>
                 </div>
 
                 <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10 text-start">
-                                    <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">Ans d'experience</p>
-                                    <h2 class="display-1 text-white mb-5 animated slideInRight">
-                                    </h2>
-                                    <a href="about.php" class="btn btn-primary py-3 px-5 animated slideInRight">Savoir plus</a>
+
+                    <?php
+
+                    $req = mysqli_query($Con, " SELECT * FROM  actualite where id = 9");
+                    if (mysqli_num_rows($req) == 0) {
+                        echo "Aucune donnée n'a été trouvée";
+                    } else {
+                        while ($rows = mysqli_fetch_assoc($req)) {
+                    ?>
+                            <img class="w-100 " src="img/<?= $rows["Images"] ?>" alt="Image">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-10 text-start">
+
+                                            <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight"> <?= $rows["Titre"] ?></p>
+                                            <p class="display-1 text-white mb-2 animated slideInRight">
+                                            <h3 class="text-white"><?= $rows["description"] ?></h3>
+                                            </p>
+                                            <a href="about.php" class="btn btn-primary py-3 px-5 animated slideInRight">Savoir plus</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                    <?php
+                        }
+                    }
+
+                    ?>
                 </div>
 
                 <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10 text-start">
-                                    <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">Ans d'experience</p>
-                                    <h2 class="display-1 text-white mb-5 animated slideInRight">
-                                    </h2>
-                                    <a href="about.php" class="btn btn-primary py-3 px-5 animated slideInRight">Savoir plus</a>
+                    <?php
+                    $req = mysqli_query($Con, " SELECT * FROM  actualite where id = 10");
+                    if (mysqli_num_rows($req) == 0) {
+                        echo "Aucune donnée n'a été trouvée";
+                    } else {
+                        while ($rows = mysqli_fetch_assoc($req)) {
+                    ?>
+                            <img class="w-100 " src="img/<?= $rows["Images"] ?>" alt="Image">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-10 text-start">
+
+                                            <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight"> <?= $rows["Titre"] ?></p>
+                                            <p class="display-1 text-white mb-2 animated slideInRight">
+                                            <h3 class="text-white"><?= $rows["description"] ?></h3>
+                                            </p>
+                                            <a href="about.php" class="btn btn-primary py-3 px-5 animated slideInRight">Savoir plus</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                    <?php
+                        }
+                    }
 
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10 text-start">
-                                    <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">Ans d'experience</p>
-                                    <h2 class="display-1 text-white mb-5 animated slideInRight">
-                                    </h2>
-                                    <a href="about.php" class="btn btn-primary py-3 px-5 animated slideInRight">Savoir plus</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    ?>
                 </div>
-
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>

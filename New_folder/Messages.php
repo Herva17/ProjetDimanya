@@ -19,7 +19,7 @@
 	  <a href="user.php"class="icon-a"><i class="fa fa-user icons"></i>Users</a>
 	  <a href="setting_site.php"class="icon-a"><i class="fa fa-list-alt icons"></i>SettingContenu</a>
 	  <a href="temoignage.php"class="icon-a"><i class="fa fa-shopping-bag icons"></i>Temoignage</a>
-	  <a href="#"class="icon-a"><i class="fa fa-tasks icons"></i> Images</a>
+	  <a href="Actualite.php"class="icon-a"><i class="fa fa-tasks icons"></i> Actualite</a>
 
 	</div>
 	<div id="main">
@@ -100,7 +100,7 @@
             <td><?=$rows["Email"]?></td>
             <td><?=$rows["Objet"]?></td>
             <td><?=$rows["Message"]?></td>
-            <td><a href="SupprimerM.php? ID=<?=$rows["id"]?>"><button type="submit" name="Send" class="bouton">Supprimer</button></a></td> 
+            <td><a href="SupprimerM.php? ID=<?=$rows["id"]?>"><button type="submit" name="Send" class="boutons">Supprimer</button></a></td> 
     
         </tr>
         <?php
@@ -113,30 +113,6 @@
 			</div>
 		</div>
 		</div>
-
-		<div class="col-div-4">
-			<div class="box-4">
-			<div class="content-box">
-				<p>Total Sale <span>Sell All</span></p>
-
-				<div class="circle-wrap">
-	    <div class="circle">
-	      <div class="mask full">
-	        <div class="fill"></div>
-	      </div>
-	      <div class="mask half">
-	        <div class="fill"></div>
-	      </div>
-	      <div class="inside-circle"> 70% </div>
-	    </div>
-	  </div>
-			</div>
-		</div>
-		</div>
-			
-		<div class="clearfix"></div>
-	</div>
-
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>

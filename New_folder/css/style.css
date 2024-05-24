@@ -144,7 +144,6 @@ body {
   padding: 3px 10px;
   font-size: 25px;
   color: #1b203d;
- 
 }
 .box-8,
 .box-4 {
@@ -322,4 +321,124 @@ tr th img {
 }
 .ajouter {
   font-size: 20px;
+}
+
+/* page actualite */
+
+.actualite1 {
+  margin: 20px;
+  display: inline-block;
+  /* si la largeur est définie ou si vous voulez aligner un bloc d'éléments */
+  margin: 10px auto;
+  justify-content: space-between;
+  margin-top: -20px;
+}
+
+.actualite2 {
+  margin: 20px;
+  /* si la largeur est définie ou si vous voulez aligner un bloc d'éléments */
+  margin: 10px auto;
+  justify-content: space-between;
+  margin-left: 240px;
+  margin-top: -180px;
+}
+
+.actualite3 {
+  margin: 20px;
+  /* si la largeur est définie ou si vous voulez aligner un bloc d'éléments */
+  margin: 10px auto;
+  justify-content: space-between;
+  margin-left: 470px;
+  margin-top: -180px;
+}
+
+.actualite4 {
+  margin: 20px;
+  /* si la largeur est définie ou si vous voulez aligner un bloc d'éléments */
+  margin: 10px auto;
+  justify-content: space-between;
+  margin-left: 700px;
+  margin-top: -180px;
+}
+
+.actualite1 img {
+  width: 25%;
+  height: auto;
+}
+.actualite2 img {
+  width: 30%;
+  height: auto;
+}
+.actualite3 img {
+  width: 40%;
+  height: auto;
+}
+.actualite4 img {
+  width: 50%;
+  height: auto;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+.actions a,
+.actions button {
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.actions a.modifier {
+  background-color: #007bff;
+}
+.modifier {
+  .modifier {
+    background-color: #042447;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 30px;
+  }
+}
+.actions button.supprimer {
+  background-color: #dc3545;
+}
+
+/* Styles formulaire */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.titre {
+  color: #ccc;
+}
+.boutons {
+  background-color: rgb(247, 19, 19);
+  font-size: 20px;
+  color: white;
+  box-shadow: 10px black;
+  border-radius: 5px 5px 5px 5px;
 }
