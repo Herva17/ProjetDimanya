@@ -42,30 +42,81 @@
 
 		<div class="col-div-3">
 			<div class="box">
-				<p>67<br /><span>NewsLetters</span></p>
+				 <?php
+				 require_once("./connexion.php");
+				 $sql = "SELECT COUNT(*) as total FROM newsletters";
+				 $result = $Con->query($sql);
+		 
+				 if ($result->num_rows > 0) {
+					 // Afficher le nombre d'étudiants
+					 $row = $result->fetch_assoc();
+				 ?>
+				<p><?=$row["total"]?><br /><span>NewsLetters</span></p>
+				<?php
+					 }
+					 ?>
+				
 				<i class="fa fa-users box-icon"></i>
 			</div>
 		</div>
 		<div class="col-div-3">
 			<div class="box">
-				<p>88<br /><span>Messages</span></p>
+			<?php
+				 require_once("./connexion.php");
+				 $sql = "SELECT COUNT(*) as total FROM messages";
+				 $result = $Con->query($sql);
+		 
+				 if ($result->num_rows > 0) {
+					 // Afficher le nombre d'étudiants
+					 $row = $result->fetch_assoc();
+				 ?>
+				<p><?=$row["total"]?><br /><span>Messages</span></p>
+				<?php
+					 }
+					 ?>
 				<i class="fa fa-list box-icon"></i>
 			</div>
 		</div>
 		<div class="col-div-3">
 			<div class="box">
-				<p>99<br /><span>Orders</span></p>
+			<?php
+				 require_once("./connexion.php");
+				 $sql = "SELECT COUNT(*) as total FROM actualite";
+				 $result = $Con->query($sql);
+		 
+				 if ($result->num_rows > 0) {
+					 // Afficher le nombre d'étudiants
+					 $row = $result->fetch_assoc();
+				 ?>
+				<p><?=$row["total"]?><br /><span>Actualite</span></p>
+				<?php
+					 }
+					 ?>
 				<i class="fa fa-shopping-bag box-icon"></i>
 			</div>
 		</div>
 		<div class="col-div-3">
 			<div class="box">
-				<p>78<br /><span>Tasks</span></p>
+			<?php
+				 require_once("./connexion.php");
+				 $sql = "SELECT COUNT(*) as total FROM Users";
+				 $result = $Con->query($sql);
+		 
+				 if ($result->num_rows > 0) {
+					 // Afficher le nombre d'étudiants
+					 $row = $result->fetch_assoc();
+				 ?>
+				<p><?=$row["total"]?><br /><span>Users</span></p>
+				<?php
+					 }
+					 ?>
 				<i class="fa fa-tasks box-icon"></i>
 			</div>
 		</div>
 		<div class="clearfix"></div>
-		<br /><br />
+		
+		<div class="clearfix"></div>
+		<br><br>
 		<div class="col-div-8">
 			<div class="box-8">
 				<div class="content-box">

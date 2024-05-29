@@ -44,46 +44,82 @@
 
 		<div class="clearfix"></div>
 		<br />
-		<?php
-		include_once "connexion.php";
-		$req = mysqli_query($Con, " SELECT * FROM  contenusslider");
-		if (mysqli_num_rows($req) == 0) {
-			echo "Aucune nouvelle n'a été ajoutée";
-		} else {
-			while ($rows = mysqli_fetch_assoc($req)) {
-		?>
-				<div class="col-div-3">
-					<div class="box">
-						<p><?= $rows["Experience"] ?><br /><span>Ans de vie</span></p>
-						<i class="fa fa-users box-icon"></i>
-					</div>
-				</div>
-
-				<div class="col-div-3">
-					<div class="box">
-						<p><?= $rows["membres"] ?><br /><span>Membres </span></p>
-						<i class="fa fa-list box-icon"></i>
-					</div>
-				</div>
-				<div class="col-div-3">
-					<div class="box">
-						<p><?= $rows["clientsS"] ?><br /><span>Clients ravis</span></p>
-						<i class="fa fa-shopping-bag box-icon"></i>
-					</div>
-				</div>
-				<div class="col-div-3">
-					<div class="box">
-						<p><?= $rows["Nprojets"] ?><br /><span>Projets réalises</span></p>
-						<i class="fa fa-tasks box-icon"></i>
-					</div>
-				</div>
-		<?php
-			}
-		}
-		?>
+		<div class="col-div-3">
+			<div class="box">
+				 <?php
+				 require_once("./connexion.php");
+				 $sql = "SELECT COUNT(*) as total FROM newsletters";
+				 $result = $Con->query($sql);
+		 
+				 if ($result->num_rows > 0) {
+					 // Afficher le nombre d'étudiants
+					 $row = $result->fetch_assoc();
+				 ?>
+				<p><?=$row["total"]?><br /><span>NewsLetters</span></p>
+				<?php
+					 }
+					 ?>
+				
+				<i class="fa fa-users box-icon"></i>
+			</div>
+		</div>
+		<div class="col-div-3">
+			<div class="box">
+			<?php
+				 require_once("./connexion.php");
+				 $sql = "SELECT COUNT(*) as total FROM messages";
+				 $result = $Con->query($sql);
+		 
+				 if ($result->num_rows > 0) {
+					 // Afficher le nombre d'étudiants
+					 $row = $result->fetch_assoc();
+				 ?>
+				<p><?=$row["total"]?><br /><span>Messages</span></p>
+				<?php
+					 }
+					 ?>
+				<i class="fa fa-list box-icon"></i>
+			</div>
+		</div>
+		<div class="col-div-3">
+			<div class="box">
+			<?php
+				 require_once("./connexion.php");
+				 $sql = "SELECT COUNT(*) as total FROM actualite";
+				 $result = $Con->query($sql);
+		 
+				 if ($result->num_rows > 0) {
+					 // Afficher le nombre d'étudiants
+					 $row = $result->fetch_assoc();
+				 ?>
+				<p><?=$row["total"]?><br /><span>Actualite</span></p>
+				<?php
+					 }
+					 ?>
+				<i class="fa fa-shopping-bag box-icon"></i>
+			</div>
+		</div>
+		<div class="col-div-3">
+			<div class="box">
+			<?php
+				 require_once("./connexion.php");
+				 $sql = "SELECT COUNT(*) as total FROM Users";
+				 $result = $Con->query($sql);
+		 
+				 if ($result->num_rows > 0) {
+					 // Afficher le nombre d'étudiants
+					 $row = $result->fetch_assoc();
+				 ?>
+				<p><?=$row["total"]?><br /><span>Users</span></p>
+				<?php
+					 }
+					 ?>
+				<i class="fa fa-tasks box-icon"></i>
+			</div>
+		</div>
 		<div class="clearfix"></div>
-		<br /><br />
-
+		<div class="clearfix"></div>
+		<br><br>
 		<h1 class="titre">Mise à jour de la page Actualite</h1>
 		<hr> <br><br><br>
 		<div class="pageActualite">
