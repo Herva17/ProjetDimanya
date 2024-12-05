@@ -34,7 +34,7 @@
             <div class="col-div-6">
                 <div class="profile">
 
-                    <img src="images/user.png" class="pro-img" />
+                <a href="index.php"><img src="../img/Herve.jpg" class="pro-img"/></a>	
                     <p>Admin<span>DimanyaWorld</span></p>
                 </div>
             </div>
@@ -153,7 +153,7 @@
                                     <th><?= $rows["temoignagecl1"] ?></th>
                                     <th><?= $rows["temoignagecl2"] ?></th>
                                     <th><?= $rows["temoignagecl3"] ?></th>
-                                    <th><a href="users/Supprimertemoignage.php? ID=<?= $rows["id"] ?>"><button type="submit" name="Send" class="boutons">Supprimer</button></a></th>
+                                    <th><a href="users/Supprimertemoignage.php? ID=<?= $rows["id"] ?>"><button type="submit" name="Send" class=""><img src="../img/trash-regular-24.png" alt=""></button></a></th>
                                 </tr>
                         <?php
                             }

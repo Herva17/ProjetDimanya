@@ -36,10 +36,10 @@ session_start();
 			<div class="col-div-6">
 				<div class="profile">
 
-					<a href="index.php" img src="images/user.png" class="pro-img">
-						<img src="" class="pro-img" />
+					<!-- < img src="images/user.png" class="pro-img"> -->
+				    <a href="index.php"><img src="../img/Herve.jpg" class="pro-img"/></a>	
 						<p>Admin<span>DimanyaWorld</span></p>
-					</a>
+					</>
 				</div>
 			</div>
 			<div class="clearfix"></div>

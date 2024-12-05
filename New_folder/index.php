@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-
-    </style>
 </head>
 
 <body>
@@ -26,9 +23,6 @@
                 <?php
                 include "login.php";
                 ?>
-
-                <a href="">for get possword</a><br>
-                <a href="">vous n'avez pas de compte</a>
             </form>
 
         </div>

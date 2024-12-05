@@ -9,10 +9,15 @@
 		.voir {
 			width: 700px;
 		}
+		*{
+		margin: auto;
+		padding: 0;
+		}
 	</style>
 </head>
 
 <body>
+<p>Cliquez ici pour retourner à la page d'accueil<a href="Actualite.php"> retour</a></p> 
 	<?php
 	include_once("connexion.php");
 	$req = mysqli_query($Con, " SELECT * FROM  actualite where id = 10");

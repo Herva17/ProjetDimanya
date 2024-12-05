@@ -250,8 +250,8 @@ th {
   display: flex;
   justify-content: center;
   position: absolute;
-  width: 20%;
-  left: 35%;
+  width: 15%;
+  left: 40%;
   top: 30%;
   color: white;
   padding: 2%;
@@ -275,9 +275,9 @@ input:not(input[type="submit"]) {
   border-bottom: 1px solid white;
   background: transparent;
   outline: none;
-  height: 60px;
+  height: 40px;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
 }
 input[type="submit"] {
   border: none;
@@ -309,7 +309,7 @@ input {
   position: absolute;
   width: 90px;
   top: -7%;
-  left: 38%;
+  left: 32%;
   border-radius: 90px;
 }
 

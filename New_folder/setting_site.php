@@ -30,7 +30,7 @@
 
             <div class="col-div-6">
                 <div class="profile">
-                    <img src="" class="pro-img" />
+                <a href="index.php"><img src="../img/Herve.jpg" class="pro-img"/></a>	
                     <p>Admin<span>DimanyaWorld</span></p>
                 </div>
             </div>

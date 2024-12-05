@@ -5,11 +5,7 @@
     <title></title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        span {
-            font-size: 20px;
-        }
-    </style>
+   
 </head>
 <body>
 
@@ -21,7 +17,7 @@
         <a href="user.php" class="icon-a"><i class="fa fa-user icons"></i>Users</a>
         <a href="setting_site.php" class="icon-a"><i class="fa fa-list-alt icons"></i>SettingContenu</a>
         <a href="temoignage.php" class="icon-a"><i class="fa fa-shopping-bag icons"></i>Temoignage</a>
-        <a href="#" class="icon-a"><i class="fa fa-tasks icons"></i> Images</a>
+        <a href="Actualite.php" class="icon-a"><i class="fa fa-tasks icons"></i>Actualite</a>
 
     </div>
     <div id="main">
@@ -35,7 +31,7 @@
             <div class="col-div-6">
                 <div class="profile">
 
-                    <img src="images/user.png" class="pro-img" />
+                <a href="index.php"><img src="../img/Herve.jpg" class="pro-img"/></a>	
                     <p>Admin<span>DimanyaWorld</span></p>
                 </div>
             </div>
@@ -150,7 +146,7 @@
                                     <th><?= $rows["AdresseMail"] ?></th>
                                     <th><?= $rows["MotDePasse"] ?></th>
                                     <th><a href="users/ModUser.php? ID=<?= $rows["id"] ?>"><button type="submit" name="Send" class="bouton">Modifier</i></button></a></th>
-                                    <th><a href="SuppUser.php? ID=<?= $rows["id"] ?>"><button type="submit" name="Send" class="boutons">Supprimer</button></a></th>
+                                    <th><a href="SuppUser.php? ID=<?= $rows["id"] ?>"><button type="submit" name="Send" ><img src="../img/trash-regular-24.png" alt=""  style="width: 50px;"></button></a></th>
                                 </tr>
                         <?php
                             }

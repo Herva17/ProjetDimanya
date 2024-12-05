@@ -8,11 +8,16 @@
 		.voir {
 			width: 700px;
 		}
+		*{
+		margin: 0;
+		padding: 0;
+		}
 	</style>
-	<title>Document</title>
+	<title>DimanyaWord</title>
 </head>
 
 <body>
+	<p>Cliquez ici pour retourner à la page d'accueil<a href="Actualite.php"> retour</a></p> 
 	<?php
 	include_once("connexion.php");
 	$req = mysqli_query($Con, " SELECT * FROM  actualite where id = 7");

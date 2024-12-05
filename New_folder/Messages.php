@@ -32,7 +32,7 @@
 			<div class="col-div-6">
 				<div class="profile">
 
-					<img src="" class="pro-img" />
+				<a href="index.php"><img src="../img/Herve.jpg" class="pro-img"/></a>	
 					<p>Admin<span>DimanyaWorld</span></p>
 				</div>
 			</div>
@@ -147,7 +147,7 @@
 									<td><?= $rows["Email"] ?></td>
 									<td><?= $rows["Objet"] ?></td>
 									<td><?= $rows["Message"] ?></td>
-									<td><a href="SupprimerM.php? ID=<?= $rows["id"] ?>"><button type="submit" name="Send" class="boutons">Supprimer</button></a></td>
+									<td><a href="SupprimerM.php? ID=<?= $rows["id"] ?>"><button type="submit" name="Send" class=""><img src="../img/trash-regular-24.png" alt=""></i></button></a></td>
 
 								</tr>
 						<?php

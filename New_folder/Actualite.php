@@ -33,8 +33,7 @@
 			<div class="col-div-6">
 				<div class="profile">
 
-					<a href="index.php" img src="images/user.png" class="pro-img">
-						<img src="" class="pro-img" />
+				<a href="index.php"><img src="../img/Herve.jpg" class="pro-img"/></a>	
 						<p>Admin<span>DimanyaWorld</span></p>
 					</a>
 				</div>
@@ -120,7 +119,7 @@
 		<div class="clearfix"></div>
 		<div class="clearfix"></div>
 		<br><br>
-		<h1 class="titre">Mise à jour de la page Actualite</h1>
+		<h1 class="titre">Nos Actualites</h1>
 		<hr> <br><br><br>
 		<div class="pageActualite">
 
